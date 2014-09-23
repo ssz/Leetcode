@@ -1,5 +1,5 @@
 Leetcode
 ========
-Solution of leetcode.
+Solutions of leetcode.
 
 Some of codes come from Github: Walnutown
