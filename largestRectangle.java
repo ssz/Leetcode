@@ -32,7 +32,6 @@ public class Solution {
         		max = Math.max(max, h[t] * len);
         	}
         }
-        
         return max;
     }
 }
