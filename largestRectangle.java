@@ -6,8 +6,9 @@
 	Solution: O(n)
     Reference: http://www.cnblogs.com/lichen782/p/leetcode_Largest_Rectangle_in_Histogram.html
  
+ 
     Another solution: O(nlogn), using Divide and Conquer.
-    Find the smallest histogram first. So the largest histogram is the height of smallest histogram * total length, or on the left or on the right. Do this process recursively. 
+    Find the smallest histogram first. So the largest histogram is the height of smallest histogram * total length, or on the left or on the right. Do this process recursively.
 */
 
 public class Solution {
