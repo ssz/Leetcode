@@ -7,6 +7,7 @@
 
 */
 
+
 /* 
 	Solution1: Greedy algorithm
 	Remember to sell the stock at end of array.
