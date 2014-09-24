@@ -1,8 +1,7 @@
 /*  Evaluate the value of an arithmetic expression in Reverse Polish Notation.
     Valid operators are +, -, *, /. Each operand may be an integer or another expression.
-    
-    Use stack
 */
+/* Use stack */
 
 public class Solution {
     public int evalRPN(String[] tokens) {
