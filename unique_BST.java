@@ -29,10 +29,6 @@
 // The array has n! permutaions, each can get Catalan number of binary trees. 
 // Cn is the number of full binary trees with n + 1 leaves.
 
-// Dynamic Programming
-// cut array[1,2,...n] into 3 parts, [1...j-1],j,[j+1...n], use left and right half to construct BST
-// time: O(n^2); space: O(n)
-
 
 /* Solution 1: recursive */
 // Recursion + memoization
