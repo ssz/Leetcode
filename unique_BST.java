@@ -18,6 +18,7 @@
 	3, the left and right subtree must be BST.
 */
 
+// Find total number-->DP, Find total combination-->DFS.
 // The result of this combinational problem is called Catalan number.
 // http://en.wikipedia.org/wiki/Catalan_number
 // Cn = (2n)!/[(n+1)!*n!] = 1/(n+1)*Com(2n, n)
