@@ -29,7 +29,7 @@ public class Solution {
            //st.pop();
            TreeNode cur=st.pop();
            tree.add(cur.val);
-           if(cur.right!=null) st.push(cur.right);
+           if(cur.right!=null) st.push(cur.right); // 要先放右元素再放左元素，这样才能在pop时先pop左元素再pop右元素
            if(cur.left!=null) st.push(cur.left);
        }
        return tree;
