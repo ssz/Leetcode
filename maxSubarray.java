@@ -12,7 +12,7 @@ public class Solution {
         if(A==null || A.length==0) return 0;
         int result=A[0], curr=A[0];
         for(int i=1; i<A.length; i++){
-            if(curr>=0){ 
+            if(curr>=0){ // if curr>=0, then result might be lager. Take curr as condition instead of A[i].
                 curr+=A[i];
             }else{
                 curr=A[i];
@@ -45,6 +45,7 @@ public class Solution {
         return max;
     }
 }
+
 // Divide and Conquer
 // time: O(nlgn); space: O(1)
 public class Solution {
@@ -53,7 +54,7 @@ public class Solution {
         return finder(A, 0, A.length-1);
     }
     
-    public int finder(int[] A, int start, int end){
+    public int finder(int[] A, int start, int end)
         if (start > end)    return Integer.MIN_VALUE;
         int mid = start + ((end - start)>>1);           // notice here, cannot omit the out-nested brackets
         int left=Integer.MIN_VALUE, right=Integer.MIN_VALUE, sum=0;
