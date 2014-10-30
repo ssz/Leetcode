@@ -15,7 +15,7 @@ public class Solution {
         if(A.length<=2) return A.length;
         int i=2, index=2;
         for(;i<A.length;i++){
-            if(A[i]==A[index-1] && A[i]==A[index-2]) continue;
+            if(A[i]==A[index-1] && A[i]==A[index-2]) continue; //check the third num is same or not.
             else A[index++]=A[i];
         }
         return index;
