@@ -10,3 +10,39 @@
 	Given n will always be valid.
 	Try to do this in one pass.
 */
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+
+public class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode newhead = new ListNode(0);
+        newhead.next = head;
+        ListNode slow = newhead; ListNode fast = head;
+        while(n > 0){
+            fast = fast.next;
+            n--;
+        }
+        
+        //ListNode pslow = newhead;
+        while(fast != null){
+            fast=fast.next;
+            slow = slow.next;
+            //pslow = pslow.next;
+        }
+        //pslow.next = pslow.next.next;
+        slow.next = slow.next.next;
+        
+        return newhead.next;
+        
+    }
+}
