@@ -20,16 +20,14 @@ public class solution {
         int l=digits.length;
         //System.out.println(l);
         int flag=0;
-        for(int j = l-1; j >= 0; j--){  
-            if (j == l - 1)
-                digits[j]++;
+        ++digits[l-1];
+        for(int j = l-1; j >= 0; j--){
             digits[j] = digits[j] + flag;
             if (digits[j] == 10) {
                 flag = 1;
                 digits[j] = 0;
             }
-            else flag = 0;
-            if (flag == 0) break;
+            else break;
         }
         
         if(digits[0]==0 && flag==1){ 
